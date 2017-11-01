@@ -90,7 +90,7 @@ mkdir -p upload
 #cp build/solc/soljson.js upload/
 #cp build/solc/soljson.js ./
 #cp build/lllc/lllc.js upload/
-cp build/lllc/lllc.js $CIRCLE_ARTIFACTS/lllc.js
+#cp build/lllc/lllc.js $CIRCLE_ARTIFACTS/lllc.js
 
 #OUTPUT_SIZE=`ls -la soljson.js`
 #echo "Emscripten solc output size: $OUTPUT_SIZE"
