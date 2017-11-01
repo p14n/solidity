@@ -45,6 +45,3 @@ jobs:
           command: |
             . /usr/local/nvm/nvm.sh
             scripts/test_emscripten.sh
-      - store_artifacts:
-          path: build/solc/soljson.js
-          destination: soljson.js
