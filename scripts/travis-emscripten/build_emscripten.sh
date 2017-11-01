@@ -89,13 +89,13 @@ cd ..
 mkdir -p upload
 #cp build/solc/soljson.js upload/
 #cp build/solc/soljson.js ./
-cp build/lllc/lllc.js upload/
+#cp build/lllc/lllc.js upload/
 cp build/lllc/lllc.js $CIRCLE_ARTIFACTS/lllc.js
 
 #OUTPUT_SIZE=`ls -la soljson.js`
 #echo "Emscripten solc output size: $OUTPUT_SIZE"
 
-OUTPUT_SIZE=`ls -la lllc.js`
-echo "Emscripten lllc output size: $OUTPUT_SIZE"
+#OUTPUT_SIZE=`ls -la lllc.js`
+#echo "Emscripten lllc output size: $OUTPUT_SIZE"
 
 echo -en 'travis_fold:end:compiling_solidity\\r'
