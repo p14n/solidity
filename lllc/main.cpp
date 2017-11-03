@@ -28,6 +28,7 @@
 #include <libdevcore/CommonData.h>
 #include <libevmasm/Instruction.h>
 #include <solidity/BuildInfo.h>
+#include <stdio.h>
 
 using namespace std;
 using namespace dev;
