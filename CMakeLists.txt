@@ -50,3 +50,7 @@ add_subdirectory(lllc)
 if (TESTS AND NOT EMSCRIPTEN)
 	add_subdirectory(test)
 endif()
+
+if (EMSCRIPTEN)
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -s FORCE_FILESYSTEM=1")
+endif()
