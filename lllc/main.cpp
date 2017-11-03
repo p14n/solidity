@@ -92,7 +92,7 @@ int main(int argc, char** argv)
 	unsigned optimise = 0;
 	string infile;
 	Mode mode = Hex;
-	printf();
+	printf("");
 
 	for (int i = 1; i < argc; ++i)
 	{
