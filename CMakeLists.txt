@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.0.0)
 
+if (EMSCRIPTEN)
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -s FORCE_FILESYSTEM=1")
+endif()
+
 set(ETH_CMAKE_DIR   "${CMAKE_CURRENT_LIST_DIR}/cmake"   CACHE PATH "The the path to the cmake directory")
 list(APPEND CMAKE_MODULE_PATH ${ETH_CMAKE_DIR})
 
@@ -51,6 +55,3 @@ if (TESTS AND NOT EMSCRIPTEN)
 	add_subdirectory(test)
 endif()
 
-if (EMSCRIPTEN)
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -s FORCE_FILESYSTEM=1")
-endif()
