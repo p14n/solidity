@@ -82,7 +82,7 @@ cmake \
   -DBoost_UNIT_TEST_FRAMEWORK_LIBRARY="$WORKSPACE"/boost_1_57_0/libboost_unit_test_framework.a \
   -DBoost_UNIT_TEST_FRAMEWORK_LIBRARIES="$WORKSPACE"/boost_1_57_0/libboost_unit_test_framework.a \
   -DTESTS=0 \
-  ../lllc
+  ..
 make -j 4
 
 cd ..
