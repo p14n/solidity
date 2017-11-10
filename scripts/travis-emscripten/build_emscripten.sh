@@ -65,7 +65,7 @@ mkdir -p build
 cd build
 cmake \
   -DCMAKE_TOOLCHAIN_FILE=$EMSCRIPTEN/cmake/Modules/Platform/Emscripten.cmake \
-  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_BUILD_TYPE=Debug \
   -DEMSCRIPTEN=1 \
   -DFORCE_FILESYSTEM=1 \
   -DBoost_FOUND=1 \
